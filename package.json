@@ -1,0 +1,8 @@
+{
+  "name": "oembed",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "oembed-providers": "https://github.com/iamcal/oembed"
+  }
+}

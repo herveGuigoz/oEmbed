@@ -1,0 +1,17 @@
+{   
+    # HTTP/3 support
+    servers {
+        protocol {
+            experimental_http3
+        }
+    }
+}
+
+{$SERVER_NAME}
+
+log
+
+route {
+    reverse_proxy dart:8080
+    encode gzip zstd
+}
